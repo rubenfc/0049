@@ -31,4 +31,25 @@ public class Test
             incremento = incremento + 1;
         }
     }
+    
+    public void sumValuesInterval(int a, int b)
+    {
+        int mayor = a;
+        int suma = b;
+        if(a < b)
+        {
+            suma = a;
+            mayor = b;
+        }
+        int incremento = 1;
+        int index = 0;
+        while(index < mayor)
+        {
+            suma = suma + incremento;
+            System.out.println(suma);
+            incremento = incremento + 1;
+            index = index + 1;
+        }
+    }
+    
 }
