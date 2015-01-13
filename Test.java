@@ -51,5 +51,23 @@ public class Test
             index = index + 1;
         }
     }
-    
+    public boolean isPrime(int n)
+    {
+        boolean esPrimo = true;
+        int index = 2;
+        while(esPrimo == true && index<(n-1))
+        {
+            if( n % index == 0)
+            {
+                esPrimo = false;
+            }
+            
+            else 
+            {
+                index = index + 1;
+            }
+        }
+        
+        return esPrimo;
+    }
 }
